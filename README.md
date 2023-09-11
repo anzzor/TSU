@@ -5,7 +5,8 @@
 ``` Pascal
 program Multiplication;
 
-var num1, num2: integer;
+var
+    num1, num2: integer;
 
 begin
     writeln('Введите два числа: '); readln(num1, num2);
@@ -81,11 +82,10 @@ var
 
 begin
   write('Введите делимое : ');
-  readLn(dividend);
-  
+  readLn(dividend);  
   write('Введите делитель : ');
   readln(divisor);
-  
+
   quotient := 0;
   remainder := dividend;
   

@@ -20,7 +20,7 @@ program ThreeIntegersInAscendingOrder;
 var
     num1, num2, num3, temp : integer;
 begin
-  write('Type three numbers through the space: '); readln(num1, num2, num3);
+  write('Введите три числа через пробел: '); readln(num1, num2, num3);
   
   if num1 > num2 then
     begin
@@ -43,7 +43,7 @@ begin
         num3 := temp;
     end;
   
-  writeLn('Numbers in ascending order : ', num1, ' ', num2, ' ', num3);
+  writeLn('Числа в порядке возрастания : ', num1, ' ', num2, ' ', num3);
   
 end.
 ```
@@ -53,23 +53,23 @@ program PointInCircleOrNo;
 var
     cx, cy, x, y, radius, hypotenuse : Real;
 begin
-  write('Enter the Coordinates of the Centre of the Circle as (CX CY): ');
+  write('Введите координаты центра круга: ');
   readln(cx, cy);
-  write('Enter the Radius of the Circle: ');
+  write('Введите радиус круга: ');
   readln(radius);
-  write('Enter the Coordinates of the Point as (X Y): ');
+  write('Введите координаты точки: ');
   readln(x, y);
-  
+
   hypotenuse := Sqrt(Sqr(x - cx) + Sqr(y - cy));
-  
+
   if hypotenuse < radius then
-    writeln('The point exists inside the circle.')
+    writeln('Точка лежит в круге.')
   else if hypotenuse = radius then
-    writeln('The point lies on the circumference of the circle.')
+    writeln('Точка лежит на круге.')
   else
-    writeln('The point is outside the circle.');
-  
-end.
+    writeln('Точка не лежит в круге.');
+
+end.    
 ```
 >## III. Циклы.
 >>### 4. Без деления найдите целую часть частного и остаток от деления двух заданных целых чисел.
@@ -80,10 +80,10 @@ var
   dividend, divisor, quotient, remainder: Integer;
 
 begin
-  write('Enter the dividend : ');
+  write('Введите делимое : ');
   readLn(dividend);
   
-  write('Enter the divisor : ');
+  write('Введите делитель : ');
   readln(divisor);
   
   quotient := 0;
@@ -95,8 +95,8 @@ begin
     quotient := quotient + 1;
   end;
   
-  writeln('Integer quotient : ', quotient);
-  writeln('Remainder : ', remainder);
+  writeln('Целая часть: ', quotient);
+  writeln('Остаток: ', remainder);
 end.
 ```
 >## IV. Массивы.
